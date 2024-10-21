@@ -20,26 +20,16 @@ namespace Leonardo.Data
             }
         } 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Folha>()
-                .HasOne(a => a.Funcionario)
-                .WithMany()
-                .HasForeignKey(a => a.AnimalId);
+            modelBuilder.Entity<Funcionario>()
+                .HasOne(a => a.Folhas)
+                .WithMany(a => a.)
+                .HasForeignKey(a => a.FolhaId);
 
-            modelBuilder.Entity<Adocao>()
-                .HasOne(a => a.Adotante)
-                .WithMany(a => a.Adocoes)
-                .HasForeignKey(a => a.AdotanteId);
-
-            modelBuilder.Entity<Animal>()
-                .HasOne(a => a.Abrigo)
-                .WithMany(a => a.Animais)
-                .HasForeignKey(a => a.AbrigoId);
-        }
+        }*/
     }
 }
 
 
-    }
-}
+    
